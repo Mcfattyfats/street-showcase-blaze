@@ -1,5 +1,3 @@
-
-
 import { Instagram, Music, Camera } from 'lucide-react';
 
 const Footer = () => {
@@ -41,7 +39,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-background-alt text-white py-8">
+    <footer className="bg-accent text-accent-foreground py-8">
       <div className="container mx-auto">
         <div className="flex justify-center items-center gap-8">
           {socialLinks.map((link) => {
@@ -52,7 +50,7 @@ const Footer = () => {
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white hover:text-accent transition-colors duration-300"
+                className="text-accent-foreground hover:text-accent-foreground/80 transition-colors duration-300"
                 aria-label={link.name}
               >
                 <IconComponent size={24} />
@@ -66,4 +64,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
