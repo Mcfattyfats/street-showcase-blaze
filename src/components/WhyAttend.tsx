@@ -1,25 +1,5 @@
 
-import { Utensils, ShoppingBag, GraduationCap } from 'lucide-react';
-
 const WhyAttend = () => {
-  const benefits = [
-    {
-      icon: Utensils,
-      title: 'Taste',
-      description: 'Street-food reinvented.'
-    },
-    {
-      icon: ShoppingBag,
-      title: 'Shop',
-      description: 'Curated stalls, emerging makers.'
-    },
-    {
-      icon: GraduationCap,
-      title: 'Learn',
-      description: 'Talks and panels with industry voices.'
-    }
-  ];
-
   return (
     <section id="why-attend" className="section-light section-padding">
       <div className="container-fluid">
@@ -38,29 +18,20 @@ const WhyAttend = () => {
             </video>
           </div>
           
-          {/* Benefits Section */}
-          <div className="space-y-8">
-            <h2 className="text-headline">Why Attend</h2>
-            
-            <div className="space-y-6">
-              {benefits.map((benefit, index) => {
-                const IconComponent = benefit.icon;
-                return (
-                  <div 
-                    key={benefit.title}
-                    className="flex items-start gap-4 animate-slide-up"
-                    style={{ animationDelay: `${index * 0.2}s` }}
-                  >
-                    <div className="bg-accent p-3 rounded-lg flex-shrink-0">
-                      <IconComponent size={24} className="text-accent-foreground" />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-semibold mb-2 heading">{benefit.title}</h3>
-                      <p className="text-muted-foreground text-body-large">{benefit.description}</p>
-                    </div>
-                  </div>
-                );
-              })}
+          {/* Text Content */}
+          <div className="space-y-6">
+            <div className="space-y-6 text-muted-foreground text-body-large leading-relaxed">
+              <p>
+                Tastemade Street Showcase transforms an ordinary city block into an open-air studio where chefs, artists, and creators trade the usual velvet-rope exclusivity for spontaneous collaboration.
+              </p>
+              
+              <p>
+                The event pumps fresh energy into the neighbourhood, drawing foot traffic that boosts small-business revenue, framing local street culture as both a community asset and an exportable experience, and sparking new partnerships that outlast the weekend.
+              </p>
+              
+              <p>
+                A parallel multimedia campaign—spanning livestream takeovers, short-form video, and interactive polls—turns every onsite moment into shareable content, ensuring the buzz reverberates far beyond the crowd on the pavement.
+              </p>
             </div>
             
             <button className="btn-dark mt-8">
