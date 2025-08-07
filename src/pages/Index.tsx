@@ -5,6 +5,7 @@ import ExperientialDistricts from "@/components/ExperientialDistricts";
 import AgendaTeaser from "@/components/AgendaTeaser";
 import ExhibitorRecruitment from "@/components/ExhibitorRecruitment";
 import RegistrationModal from "@/components/RegistrationModal";
+import Footer from "@/components/Footer";
 import { useState } from "react";
 
 const Index = () => {
@@ -23,6 +24,7 @@ const Index = () => {
       <ExperientialDistricts />
       <AgendaTeaser />
       <ExhibitorRecruitment onApplyNow={() => openModal('exhibitor')} />
+      <Footer />
       
       <RegistrationModal
         isOpen={isModalOpen}

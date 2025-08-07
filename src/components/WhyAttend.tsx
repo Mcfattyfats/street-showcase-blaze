@@ -4,18 +4,13 @@ const WhyAttend = () => {
     <section id="why-attend" className="section-light section-padding">
       <div className="container-fluid">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Video Section */}
+          {/* Image Section */}
           <div className="aspect-video rounded-lg overflow-hidden shadow-2xl">
-            <video
-              autoPlay
-              muted
-              loop
-              playsInline
+            <img
+              src="/lovable-uploads/1e38e695-b6c8-445d-bcad-88fed82c7b73.png"
+              alt="Tastemade Street Showcase event with colorful booths, art installations, and people enjoying outdoor activities in a park setting"
               className="w-full h-full object-cover"
-            >
-              <source src="https://player.vimeo.com/external/371433846.sd.mp4?s=236da2f3c0fd273d2c6d9a064f3ae35579b2bbdf&profile_id=139&oauth2_token_id=57447761" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            />
           </div>
           
           {/* Text Content */}
