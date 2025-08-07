@@ -1,4 +1,5 @@
 
+
 import { Instagram, Music, Camera } from 'lucide-react';
 
 const Footer = () => {
@@ -40,7 +41,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-background text-white py-8">
+    <footer className="bg-background-alt text-white py-8">
       <div className="container mx-auto">
         <div className="flex justify-center items-center gap-8">
           {socialLinks.map((link) => {
@@ -65,3 +66,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
