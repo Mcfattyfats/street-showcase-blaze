@@ -39,7 +39,7 @@
     --input: 0 0% 90%;
     --ring: 48 100% 50%;
     
-    --radius: 0.5rem;
+    --radius: 12px;
   }
   
   /* Typography Scale */
@@ -113,24 +113,24 @@
 @layer components {
   /* Button System */
   .btn-primary {
-    @apply bg-accent text-accent-foreground px-8 py-4 text-body-large font-medium rounded-none transition-all duration-300 hover:shadow-lg active:scale-[0.98];
+    @apply bg-accent text-accent-foreground px-8 py-4 text-body-large font-medium rounded-lg transition-all duration-300 hover:shadow-lg active:scale-[0.98];
   }
   
   .btn-secondary {
-    @apply border-2 border-accent text-accent bg-transparent px-8 py-4 text-body-large font-medium rounded-none transition-all duration-300 hover:bg-accent hover:text-accent-foreground hover:shadow-lg active:scale-[0.98];
+    @apply border-2 border-accent text-accent bg-transparent px-8 py-4 text-body-large font-medium rounded-lg transition-all duration-300 hover:bg-accent hover:text-accent-foreground hover:shadow-lg active:scale-[0.98];
   }
   
   .btn-dark {
-    @apply bg-foreground text-background px-8 py-4 text-body-large font-medium rounded-none transition-all duration-300 hover:shadow-lg active:scale-[0.98];
+    @apply bg-foreground text-background px-8 py-4 text-body-large font-medium rounded-lg transition-all duration-300 hover:shadow-lg active:scale-[0.98];
   }
   
   /* Card System */
   .card-interactive {
-    @apply transition-all duration-500 hover:shadow-2xl hover:-translate-y-1 cursor-pointer;
+    @apply transition-all duration-500 hover:shadow-2xl hover:-translate-y-1 cursor-pointer rounded-lg;
   }
   
   .card-district {
-    @apply bg-transparent border border-accent/20 p-8 transition-all duration-300 hover:bg-accent hover:text-accent-foreground hover:border-accent;
+    @apply bg-transparent border border-accent/20 p-8 rounded-lg transition-all duration-300 hover:bg-accent hover:text-accent-foreground hover:border-accent;
   }
   
   /* Section Backgrounds */
@@ -163,6 +163,7 @@
   .glass-overlay {
     backdrop-filter: blur(8px);
     background: rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
   }
 }
 

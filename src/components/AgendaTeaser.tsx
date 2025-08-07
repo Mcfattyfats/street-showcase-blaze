@@ -10,7 +10,7 @@ const AgendaTeaser = () => {
   ];
 
   return (
-    <section className="section-light section-padding">
+    <section className="bg-muted section-padding">
       <div className="container-fluid">
         <h2 className="text-headline text-center mb-16">Event Schedule</h2>
         
@@ -21,10 +21,10 @@ const AgendaTeaser = () => {
               {sessions.map((session, index) => (
                 <li 
                   key={session.time}
-                  className="flex items-center gap-4 p-4 border-l-4 border-accent animate-slide-up"
+                  className="flex items-center gap-4 p-4 border-l-4 border-accent animate-slide-up rounded-r-lg"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <span className="font-semibold text-accent min-w-[60px]">{session.time}</span>
+                  <span className="font-semibold text-foreground min-w-[60px]">{session.time}</span>
                   <span className="text-body-large">{session.event}</span>
                 </li>
               ))}
